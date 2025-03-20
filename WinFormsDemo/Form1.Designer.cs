@@ -33,11 +33,12 @@
             this.btnToggleVisibility = new System.Windows.Forms.Button();
             this.lstItems = new System.Windows.Forms.ListBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.btnOpenSettings = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBackgroundToggle
             // 
-            this.btnBackgroundToggle.Location = new System.Drawing.Point(12, 70);
+            this.btnBackgroundToggle.Location = new System.Drawing.Point(12, 130);
             this.btnBackgroundToggle.Name = "btnBackgroundToggle";
             this.btnBackgroundToggle.Size = new System.Drawing.Size(187, 70);
             this.btnBackgroundToggle.TabIndex = 0;
@@ -47,7 +48,7 @@
             // 
             // btnAddItem
             // 
-            this.btnAddItem.Location = new System.Drawing.Point(205, 70);
+            this.btnAddItem.Location = new System.Drawing.Point(205, 130);
             this.btnAddItem.Name = "btnAddItem";
             this.btnAddItem.Size = new System.Drawing.Size(182, 70);
             this.btnAddItem.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // btnToggleVisibility
             // 
-            this.btnToggleVisibility.Location = new System.Drawing.Point(393, 70);
+            this.btnToggleVisibility.Location = new System.Drawing.Point(393, 130);
             this.btnToggleVisibility.Name = "btnToggleVisibility";
             this.btnToggleVisibility.Size = new System.Drawing.Size(186, 70);
             this.btnToggleVisibility.TabIndex = 2;
@@ -69,23 +70,33 @@
             // 
             this.lstItems.FormattingEnabled = true;
             this.lstItems.ItemHeight = 16;
-            this.lstItems.Location = new System.Drawing.Point(18, 157);
+            this.lstItems.Location = new System.Drawing.Point(18, 236);
             this.lstItems.Name = "lstItems";
             this.lstItems.Size = new System.Drawing.Size(548, 148);
             this.lstItems.TabIndex = 3;
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(18, 328);
+            this.progressBar.Location = new System.Drawing.Point(18, 477);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(548, 110);
             this.progressBar.TabIndex = 4;
+            // 
+            // btnOpenSettings
+            // 
+            this.btnOpenSettings.Location = new System.Drawing.Point(413, 0);
+            this.btnOpenSettings.Name = "btnOpenSettings";
+            this.btnOpenSettings.Size = new System.Drawing.Size(182, 64);
+            this.btnOpenSettings.TabIndex = 5;
+            this.btnOpenSettings.Text = "Instellingen";
+            this.btnOpenSettings.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 624);
+            this.Controls.Add(this.btnOpenSettings);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.lstItems);
             this.Controls.Add(this.btnToggleVisibility);
@@ -105,6 +116,7 @@
         private System.Windows.Forms.Button btnToggleVisibility;
         private System.Windows.Forms.ListBox lstItems;
         private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Button btnOpenSettings;
     }
 }
 

@@ -45,5 +45,13 @@ namespace WinFormsDemo
             lstItems.Visible = !isVisible;
         }
 
+        private void btnOpenSettings_Click(object sender, EventArgs e)
+        {
+            SettingsForm settingsForm = new SettingsForm();
+            this.Enabled = false;
+            settingsForm.ShowDialog();
+            this.Enabled = true;
+        }
+
     }
 }

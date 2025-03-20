@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Drawing;
+
 namespace WinFormsDemo.Properties
 {
 
@@ -26,5 +28,9 @@ namespace WinFormsDemo.Properties
                 return defaultInstance;
             }
         }
+
+        public string SelectedComponent { get; internal set; }
+        public Color BgColor { get; internal set; }
+        public Color FgColor { get; internal set; }
     }
 }
